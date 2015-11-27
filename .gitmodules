@@ -4,3 +4,6 @@
 [submodule "lib/RealtimeGameLib"]
 	path = lib/RealtimeGameLib
 	url = git@github.com:Quinten/RealtimeGameLib.git
+[submodule "lib/Hi-ReS-Stats"]
+	path = lib/Hi-ReS-Stats
+	url = git@github.com:Quinten/Hi-ReS-Stats.git
