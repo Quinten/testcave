@@ -1,0 +1,6 @@
+[submodule "lib/flixel"]
+	path = lib/flixel
+	url = git@github.com:Quinten/flixel.git
+[submodule "lib/RealtimeGameLib"]
+	path = lib/RealtimeGameLib
+	url = git@github.com:Quinten/RealtimeGameLib.git
