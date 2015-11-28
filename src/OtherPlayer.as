@@ -70,8 +70,8 @@ package
 
 			//SHOOTING
 			if(shoot){
-				//getMidpoint(_point);
-				//(_bullets.recycle(Bullet) as Bullet).shoot(_point, aim);
+				getMidpoint(_point);
+				(_bullets.recycle(Bullet) as Bullet).shoot(_point, aim);
 				shoot = false;
 			}
 			

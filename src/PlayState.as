@@ -7,8 +7,8 @@ package
 	import realtimelib.events.PeerStatusEvent;
 	
 	import flash.events.Event;
-    import flash.utils.Timer;
-    import flash.events.TimerEvent;
+	import flash.utils.Timer;
+	import flash.events.TimerEvent;
 
 	public class PlayState extends FlxState
 	{
@@ -204,14 +204,16 @@ package
 			if (_enemies[peerID] == null) {
 				return;
 			}
-			trace("hello");
+			//trace("hello");
 			var enemy:OtherPlayer = _enemies[peerID];
 			if(enemy!=null){				
 				enemy.xHome = obj.x;
 				enemy.yHome = obj.y;
 				enemy.facing = obj.facing;
 				enemy.aim = obj.aim;
-				enemy.shoot = obj.shoot;
+				if (obj.shoot) {
+					enemy.shoot = obj.shoot;
+				}
 				enemy.aniFrame = obj.aniFrame;
 				enemy.doFlicker = obj.flicker;
 				enemy.doKill = obj.doKill;
@@ -223,13 +225,15 @@ package
 				npcenemy.yHome = obj.npcpos.y;
 				npcenemy.facing = obj.npcpos.facing;
 				npcenemy.aim = obj.npcpos.aim;
-				npcenemy.shoot = obj.npcpos.shoot;
+				if (obj.npcpos.shoot) {
+					npcenemy.shoot = obj.npcpos.shoot;
+				}
 				npcenemy.aniFrame = obj.npcpos.aniFrame;
 				npcenemy.doFlicker = obj.npcpos.flicker;
 				npcenemy.doKill = obj.npcpos.doKill;
 				npcenemy.visible = obj.npcpos.visible;
 			}
-			trace("pello");
+			//trace("pello");
 		}
 		
 		override public function destroy():void
