@@ -1,3 +1,5 @@
 # testcave
 
-A p2p flash experimental shooting game. Really want to finish this project sometime and do network transferring of the bullets correctly. When i start working on this project again i will add the source.
+A peer to peer multiplayer pixelated shooting flash game.
+
+It is still a work in progress. There still needs to be way to count the number of kills a player does over the network. Maybe some more npc characters.
